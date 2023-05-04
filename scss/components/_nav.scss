@@ -1,0 +1,21 @@
+.nav {
+    justify-content: center;
+    align-items: center;
+    --item: 3;
+
+    &__item--link {
+        display: block;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: calc(16 / 12);
+        letter-spacing: 0.1em;
+        color: var(--secondary-txt-cl);
+        padding: 20px 0;
+        cursor: pointer;
+        transition: color var(--animation);
+    }
+    &__item--link:hover,
+    &__item--link:focus {
+        color: var(--orange-txt-cl);
+    }
+}

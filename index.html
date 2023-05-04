@@ -21,291 +21,408 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!--Header section-->
     <header class="header">
-      <a href="" class="logo link">
-        <img src="" alt="" class="logo__img" />
-      </a>
-      <ul class="nav__list list">
-        <li class="nav__item item"><a href="" class="nav__item--link link">About</a></li>
-        <li class="nav__item item"><a href="" class="nav__item--link link">Services and prices</a></li>
-        <li class="nav__item item"><a href="" class="nav__item--link link">Barbers</a></li>
-        <li class="nav__item item"><a href="" class="nav__item--link link">Contacts</a></li>
-      </ul>
-      <a href="" class="header__contact--link link">+38 044 111 11 11</a>
-      <button class="header__button" type="button">Online-booking</button>
+      <div class="header__container container">
+        <a class="logo link" href="./images/logo.jpg" target="_blank">
+          <svg class="logo__img" width="76" height="76">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <ul class="nav list card-set">
+          <li class="nav__item item"><a href="#about" class="nav__item--link link">About</a></li>
+          <li class="nav__item item"
+            ><a href="#price" class="nav__item--link link">Services and prices</a></li
+          >
+          <li class="nav__item item"
+            ><a href="#barbers" class="nav__item--link link">Barbers</a></li
+          >
+          <li class="nav__item item"
+            ><a href="#contacts" class="nav__item--link link">Contacts</a></li
+          >
+        </ul>
+        <div class="header__contact card-set">
+          <a href="" class="nav__item--link link">+38 044 111 11 11</a>
+          <button class="header__button" type="button">Online-booking</button>
+        </div>
+      </div>
     </header>
     <main>
-
       <!--Hero section-->
 
+      <section class="hero">
+        <div class="container">
+          <div class="hero__left--side">
+          <ul class="hero__social list">
+            <li class="hero__social--item item">
+              <a href="" class="hero__item--link link">Instagram</a>
+            </li>
+            <li class="hero__social--item item">
+              <a href="" class="hero__item--link link">Youtube</a>
+            </li>
+          </ul>
+          </div>
+          <div class="hero__right--side">
+            <p class="hero__uppertitle">A hair salon for men in Kyiv</p>
+            <h1 class="hero__title">BarberShop</h1>
+            <p class="hero__undertitle"
+              >We are experts in trendy men’s haircuts. We work quickly, carefully and with
+              style.</p
+            >
+          </div>
+          <ul class="hero__list list">
+            <li class="hero__item item"><a href="" class="hero__link link">Back</a></li>
+            <li class="hero__item item"><a href="" class="hero__link link">Forward</a></li>
+          </ul>
+        </div>
+      </section>
 
-    <section class="hero">
-      <ul class="hero__social--list list">
-        <li class="hero__social--item item">
-          <a href="" class="hero__item--link link">Instagram</a>
-        </li>
-        <li class="hero__social--item item">
-          <a href="" class="hero__item--link link">Youtube</a>
-        </li>
-      </ul>
-      <div>
-        <p class="hero__uppertitle">A hair salon for men in Kyiv</p>
-        <h1 class="hero__title">BarberShop</h1>
-        <p class="hero__undertitle">We are experts in trendy men’s haircuts. We work quickly, carefully and with style.</p>
-      </div>
-      <ul class="hero__list list">
-        <li class="hero__item item"><a href="" class="hero__link link">Back</a></li>
-        <li class="hero__item item"><a href="" class="hero__link link">Forward</a></li>
-      </ul>
-    </section>
+      <!--About section-->
 
-    <!--About section-->
+      <section class="about" id="about">
+        <div class="container">
+          <ul class="about__list list">
+            <li class="about__item item">
+              <img
+                class="about__img"
+                src="./images/about-1.jpg"
+                alt="Barber`s work1"
+                width="270"
+                height="445"
+              />
+            </li>
+            <li class="about__item item">
+              <img
+                class="about__img"
+                src="./images/about-2.jpg"
+                alt="Barber`s work2"
+                width="270"
+                height="445"
+              />
+            </li>
+          </ul>
+          <div>
+            <p class="about__uppertitle">About</p>
+            <h2 class="about__title">Best Barbershop in your city</h2>
+            <p class="about__undertitle"
+              >If you want to add more confidence to your image, you should visit us.</p
+            >
+            <p class="about__article"
+              >We are a team that never stops at what has been achieved and are thirsty for changes.
+              And when you fall into the hands of our master, you will never be the same again. We
+              are a team that is always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!</p
+            >
+            <button class="about__button" type="button">Online-booking</button>
+          </div>
+        </div>
+      </section>
 
+      <!--Price section-->
+      <section class="price" id="price">
+        <div class="container">
+          <p class="price__uppertitle">Spend your time with the best masters</p>
+          <h2 class="price__title">Services and prices</h2>
 
-    <section class="about">
-<ul class="about__list list">
-  <li class="about__item item"><img src="" alt="" class="about__img"></li>
-  <li class="about__item item"><img src="" alt="" class="about__img"></li>
-</ul>
-<div>
-  <p class="about__uppertitle">About</p>
-  <h2 class="about__title">Best Barbershop in your city</h2>
-  <p class="about__undertitle">If you want to add more confidence to your image, you should visit us.</p>
-  <p class="about__article">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands
-  of our master, you will never be the same again. We are a team that is always "on the same wave" with clients.
-  Therefore, we are always ready to improve everyone who comes to us!</p>
-  <button class="about__button" type="button">Online-booking</button>
-</div>
-    </section>
+          <ul class="price__list list">
+            <li class="price__item item">
+              <ul class="price__list--service list">
+                <li class="price__item--service item"
+                  >Men’s haircut<span class="price__item--value">from 300 uah.</span></li
+                >
+                <li class="price__item--service item"
+                  >Beard trim<span class="price__item--value">from 300 uah.</span></li
+                >
+                <li class="price__item--service item"
+                  >Mustache trim<span class="price__item--value">from 200 uah.</span></li
+                >
+                <li class="price__item--service item"
+                  >Straight razor shave<span class="price__item--value">from 200 uah.</span></li
+                >
+              </ul>
+            </li>
+            <li class="price__item item">
+              <ul class="price__list--service list">
+                <li class="price__item--service item"
+                  >Trainee’s haircut<span class="price__item--value">from 50 uah.</span></li
+                >
+                <li class="price__item--service item"
+                  >Haircut under the nozzle<span class="price__item--value">from 200 uah.</span></li
+                >
+                <li class="price__item--service item"
+                  >Children’s haircut (0-12 y.o.)<span class="price__item--value"
+                    >from 300 uah</span
+                  ></li
+                >
+                <li class="price__item--service item"
+                  >Camouflage of gray hair<span class="price__item--value">from 200 uah</span></li
+                >
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
 
+      <!--section customers-->
 
-    <!--Price section-->
-<section class="price">
-    <p class="price__uppertitle">Spend your time with the best masters</p>
-    <h2 class="price__title">Services and prices</h2>
+      <section class="customers">
+        <div class="container">
+          <div class="customers__left">
+            <ul class="customers__list list">
+              <li class="customers__item item">
+                <p class="customers__amount">600</p>
+                <p class="customers__description">Satisfied customers per day</p>
+              </li>
+              <li class="customers__item item">
+                <p class="customers__amount">50</p>
+                <p class="customers__description">Awards for excellent service</p>
+              </li>
+              <li class="customers__item item">
+                <p class="customers__amount">20</p>
+                <p class="customers__description">Kyiv’s best professional barbers</p>
+              </li>
+              <li class="customers__item item">
+                <p class="customers__amount">100</p>
+                <p class="customers__description">Gifts for regular customers</p>
+              </li>
+            </ul>
+          </div>
+          <div class="customers__rigth">
+            <p class="customers__uppertitle">Old traditional school</p>
+            <h2 class="customers__title">Why people come to us?</h2>
+            <p class="customers__undertitle"
+              >Only good things are said about us. But it's better to see and feel 1 time than read
+              10 times.</p
+            >
+          </div>
+        </div>
+      </section>
 
-    <ul class="price__list list">
-      <li class="price__item item">
-        <ul class="price__list--service list">
-          <li class="price__item--service item">Men’s haircut<span class="price__item--value">from 300 uah.</span></li>
-          <li class="price__item--service item">Beard trim<span class="price__item--value">from 300 uah.</span></li>
-          <li class="price__item--service item">Mustache trim<span class="price__item--value">from 200 uah.</span></li>
-          <li class="price__item--service item">Straight razor shave<span class="price__item--value">from 200 uah.</span></li>
+      <!--Section Barbers-->
+
+      <section class="barbers" id="barbers">
+        <div class="container">
+          <p class="barbers__uppertitle">For true enjoyers of the atmosphere</p>
+          <h2 class="barbers__title">Our barbers</h2>
+
+          <ul class="barbers__list list">
+            <li class="barbers__item item">
+              <img
+                class="barbers__img"
+                width="370"
+                height="346"
+                src="./images/barbers1.jpg"
+                alt="John Smith"
+              />
+              <h3 class="barbers__name">John Smith</h3>
+              <p class="barbers__article">Extreme Barber</p>
+              <ul class="social__list list">
+                <li class="social__item item">
+                  <svg class="social__icon" width="20" heigth="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </li>
+                <li class="social__item item">
+                  <svg class="social__icon" width="20" heigth="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </li>
+                <li class="social__item item">
+                  <svg class="social__icon" width="20" heigth="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </li>
+                <li class="social__item item">
+                  <svg class="social__icon" width="20" heigth="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+            <li class="barbers__item item">
+              <img
+                class="barbers__img"
+                width="370"
+                height="346"
+                src="./images/barbers2.jpg"
+                alt="Michele Doe"
+              />
+              <h3 class="barbers__name">Michele Doe</h3>
+              <p class="barbers__article">Extreme Barber</p>
+              <ul class="social__list list">
+                <li class="social__item item">
+                  <svg class="social__icon" width="20" heigth="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </li>
+                <li class="social__item item">
+                  <svg class="social__icon" width="20" heigth="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </li>
+                <li class="social__item item">
+                  <svg class="social__icon" width="20" heigth="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </li>
+                <li class="social__item item">
+                  <svg class="social__icon" width="20" heigth="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+            <li class="barbers__item item">
+              <img
+                class="barbers__img"
+                width="370"
+                height="346"
+                src="./images/barbers3.jpg"
+                alt="Alan Black"
+              />
+              <h3 class="barbers__name">Alan Black</h3>
+              <p class="barbers__article">Extreme Barber</p>
+              <ul class="social__list list">
+                <li class="social__item item">
+                  <svg class="social__icon" width="20" heigth="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </li>
+                <li class="social__item item">
+                  <svg class="social__icon" width="20" heigth="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </li>
+                <li class="social__item item">
+                  <svg class="social__icon" width="20" heigth="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </li>
+                <li class="social__item item">
+                  <svg class="social__icon" width="20" heigth="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--GALLERY-->
+
+      <section class="gallery">
+        <p class="gallery__uppertitle">In Latin, "barba" means "beard"</p>
+        <h2 class="gallery__title">Gallery</h2>
+        <ul class="gallery__list list">
+          <li class="gallery__item item"
+            ><img
+              class="gallery__img"
+              src="./images/gallery1.jpg"
+              alt="gallery1"
+              width="270"
+              height="360"
+          /></li>
+          <li class="gallery__item item"
+            ><img
+              class="gallery__img"
+              src="./images/gallery2.jpg"
+              alt="gallery2"
+              width="270"
+              height="360"
+          /></li>
+          <li class="gallery__item item"
+            ><img
+              class="gallery__img"
+              src="./images/gallery3.jpg"
+              alt="gallery3"
+              width="270"
+              height="360"
+          /></li>
+          <li class="gallery__item item"
+            ><img
+              class="gallery__img"
+              src="./images/gallery4.jpg"
+              alt="gallery4"
+              width="270"
+              height="360"
+          /></li>
         </ul>
-      </li>
-      <li class="price__item item">
-        <ul class="price__list--service list">
-          <li class="price__item--service item">Trainee’s haircut<span class="price__item--value">from 50 uah.</span></li>
-          <li class="price__item--service item">Haircut under the nozzle<span class="price__item--value">from 200 uah.</span></li>
-          <li class="price__item--service item">Children’s haircut (0-12 y.o.)<span class="price__item--value">from 300 uah</span></li>
-          <li class="price__item--service item">Camouflage of gray hair<span class="price__item--value">from 200 uah</span></li>
-        </ul>
-      </li>
-    </ul>
-</section>
+      </section>
 
+      <!--Section Booking-->
 
-<!--section customers-->
+      <section class="booking">
+        <h2 class="booking__title">Online-booking</h2>
+        <form action="" class="booking__form">
+          <label for="" class="booking__label">
+            <input type="text" class="booking__input" name="user-name" placeholder="Name" />
+            <span class="booking__form--article">Name*</span>
+          </label>
+          <label for="" class="booking__label">
+            <input type="tel" class="booking__input" name="phone" placeholder="Phone" />
+            <span class="booking__form--article">Phone*</span>
+          </label>
 
+          <label for="" class="booking__label">
+            <textarea
+              name="user-name"
+              id=""
+              cols="30"
+              rows="6"
+              class="booking__textarea"
+              placeholder="Message"
+            ></textarea>
+            <span class="booking__form--article">Message</span>
+          </label>
+        </form>
+        <button class="booking__button" type="submit"> SEND</button>
+      </section>
 
-<section class="customers">
-<div class="customers__left">
-  <ul class="customers__list list">
-    <li class="customers__item item">
-      <p class="customers__amount">600</p>
-      <p class="customers__description">Satisfied customers per day</p>
-    </li>
-    <li class="customers__item item">
-      <p class="customers__amount">50</p>
-      <p class="customers__description">Awards for excellent service</p>
-    </li>
-    <li class="customers__item item">
-      <p class="customers__amount">20</p>
-      <p class="customers__description">Kyiv’s best
-      professional barbers</p>
-    </li>
-    <li class="customers__item item">
-      <p class="customers__amount">100</p>
-      <p class="customers__description">Gifts for regular customers</p>
-    </li>
-  </ul>
-</div>
-<div class="customers__rigth">
-  <p class="customers__uppertitle">Old traditional school</p>
-  <h2 class="customers__title">Why people come to us?</h2>
-  <p class="customers__undertitle">Only good things are said about us. But it's better to see and feel 1 time than read 10 times.</p>
-</div>
-</section>
+      <!--Section Contacts-->
 
-
-<!--Section Barbers-->
-
-<section class="barbers">
-<p class="barbers__uppertitle">For true enjoyers of the atmosphere</p>
-<h2 class="barbers__title">Our barbers</h2>
-
-<ul class="barbers__list list">
-  <li class="barbers__item item">
-    <img src="" alt="" class="barbers__img">
-    <h3 class="barbers__name">John Smith</h3>
-    <p class="barbers__article">Extreme Barber</p>
-    <ul class="social__list list">
-      <li class="social__item item">
-        <svg class="social__icon">
-          <use></use>
-        </svg>
-      </li>
-      <li class="social__item item">
-        <svg class="social__icon">
-          <use></use>
-        </svg>
-      </li>
-      <li class="social__item item">
-        <svg class="social__icon">
-          <use></use>
-        </svg>
-      </li>
-      <li class="social__item item">
-        <svg class="social__icon">
-          <use></use>
-        </svg>
-      </li>
-    </ul>
-  </li>
-  <li class="barbers__item item">
-    <img src="" alt="" class="barbers__img">
-    <h3 class="barbers__name">Michele Doe</h3>
-    <p class="barbers__article">Extreme Barber</p>
-    <ul class="social__list list">
-      <li class="social__item item">
-        <svg class="social__icon">
-          <use></use>
-        </svg>
-      </li>
-      <li class="social__item item">
-        <svg class="social__icon">
-          <use></use>
-        </svg>
-      </li>
-      <li class="social__item item">
-        <svg class="social__icon">
-          <use></use>
-        </svg>
-      </li>
-      <li class="social__item item">
-        <svg class="social__icon">
-          <use></use>
-        </svg>
-      </li>
-    </ul>
-  </li>
-  <li class="barbers__item item">
-    <img src="" alt="" class="barbers__img">
-    <h3 class="barbers__name">Alan Black</h3>
-    <p class="barbers__article">Extreme Barber</p>
-    <ul class="social__list list">
-      <li class="social__item item">
-        <svg class="social__icon">
-          <use></use>
-        </svg>
-      </li>
-      <li class="social__item item">
-        <svg class="social__icon">
-          <use></use>
-        </svg>
-      </li>
-      <li class="social__item item">
-        <svg class="social__icon">
-          <use></use>
-        </svg>
-      </li>
-      <li class="social__item item">
-        <svg class="social__icon">
-          <use></use>
-        </svg>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-</section>
-
-<section class="gallery">
-  <p class="gallery__uppertitle">In Latin, "barba" means "beard"</p>
-  <h2 class="gallery__title">Gallery</h2>
-  <ul class="gallery__list list">
-    <li class="gallery__item item"><img src="" alt=""></li>
-    <li class="gallery__item item"><img src="" alt=""></li>
-    <li class="gallery__item item"><img src="" alt=""></li>
-    <li class="gallery__item item"><img src="" alt=""></li>
-  </ul>
-</section>
-
-
-<!--Section Booking-->
-
-<section class="booking">
-  <h2 class="booking__title">Online-booking</h2>
-  <form action="" class="booking__form">
-    <label for="" class="booking__label">
-      <input type="text" class="booking__input" name="user-name" placeholder="Name">
-    <span class="booking__form--article">Name*</span>
-    </label>
-    <label for="" class="booking__label">
-      <input type="tel" class="booking__input" name="phone" placeholder="Phone">
-      <span class="booking__form--article">Phone*</span>
-    
-    </label>
-
-    <label for="" class="booking__label"><textarea name="user-name" id="" cols="30" rows="6" class="booking__textarea" placeholder="Message"></textarea>
-      <span class="booking__form--article">Message</span>
-    </label>
-  </form>
-  <button class="booking__button" type="submit">
-  SEND</button>
-</section>
-
-<!--Section Contacts-->
-
-<section class="contacts">
-  <h2 class="contacts__title">Contacts</h2>
-  <adress class="contacts__adress">
-    <ul class="contacts__list list">
-      <li class="contacts__item item">
-        <a href="" class="contacts__link" href="https://goo.gl/maps/gcrVQUgWByj6P1d4A"
-                      target="_blank"
-                      rel="noopener noreferrer">
-          <svg class="contacts__item">
-            <use></use>
-          </svg>
-          st. Vasylkivska, 7A
-          Kiev, 08132
-        </a>
-      </li>
-      <li class="contacts__item item">
-        <a href="" class="contacts__link" href="tel:+380441111111">
-          <svg class="contacts__item">
-            <use></use>
-          </svg>
-          +38 044 111 11 11
-        </a>
-      </li>
-      <li class="contacts__item item">
-        <a href="" class="contacts__link" href="mailto:barbershop@email.com">
-          <svg class="contacts__item">
-            <use></use>
-          </svg>
-          barbershop@email.com
-        </a>
-      </li>
-    </ul>
-  </adress>
-  <p class="contacts__undertitle">Working hours</p>
-  <p class="contacts__article--time">Every day from 9:00 to 22:00</p>
-</section>
+      <section class="contacts" id="contacts">
+        <h2 class="contacts__title">Contacts</h2>
+        <adress class="contacts__adress">
+          <ul class="contacts__list list">
+            <li class="contacts__item item">
+              <a
+                href=""
+                class="contacts__link"
+                href="https://goo.gl/maps/gcrVQUgWByj6P1d4A"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="contacts__item" width="24" heigth="24">
+                  <use href="./images/icons.svg#icon-map-pin"></use>
+                </svg>
+                st. Vasylkivska, 7A Kiev, 08132
+              </a>
+            </li>
+            <li class="contacts__item item">
+              <a href="" class="contacts__link" href="tel:+380441111111">
+                <svg class="contacts__item" width="24" heigth="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                +38 044 111 11 11
+              </a>
+            </li>
+            <li class="contacts__item item">
+              <a href="" class="contacts__link" href="mailto:barbershop@email.com">
+                <svg class="contacts__item" width="24" heigth="24">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                barbershop@email.com
+              </a>
+            </li>
+          </ul>
+        </adress>
+        <p class="contacts__undertitle">Working hours</p>
+        <p class="contacts__article--time">Every day from 9:00 to 22:00</p>
+      </section>
     </main>
 
     <!--Footer-->

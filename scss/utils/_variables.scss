@@ -1,15 +1,23 @@
 /*block 1*/
 
-/*
 :root {
     /*Fonts*/
+    --main-font: "Open Sans", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+    /*Text colors*/
+    --main-txt-cl: #303030;
+    --secondary-txt-cl: #ffffff;
+    --grey-txt-cl: #9da4bd;
+    --hero-back-txt-cl: rgba(157, 164, 189, 0.6);
+    --about-txt-cl: #555555;
+    --orange-txt-cl: #ff6c00;
+    /*Bg colors*/
+    --main-bg: #111319;
+    --secondary-bg: #f7f7f7;
+    --orange-bg: #ff6c00;
 
-/*Text colors*/
-
-/*Bg colors*/
-
-/*Others*/
-
-/*  --gap: 30px;
-    --item: 4;
-  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
+    /*Others*/
+    --gap: 30px;
+    --item: 1;
+    --animation: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
