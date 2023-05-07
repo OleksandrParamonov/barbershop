@@ -1,0 +1,29 @@
+.gallery {
+    max-width: 1600px;
+    &__uppertitle {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: calc(15 / 11);
+        text-transform: uppercase;
+        margin-bottom: 44px;
+        margin-left: 215px;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 1px;
+            background: currentColor;
+        }
+    }
+    &__title {
+        display: none;
+    }
+    &__list {
+        justify-content: center;
+        align-items: center;
+    }
+}

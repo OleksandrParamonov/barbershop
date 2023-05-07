@@ -139,6 +139,33 @@ img {
   margin-left: auto;
 }
 
+.social__list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  --gap: 10px;
+}
+.social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--secondary-txt-cl);
+  border-radius: 50%;
+}
+.social__link:hover .social__icon, .social__link:focus .social__icon {
+  fill: var(--orange-bg);
+  -webkit-transition: fill var(--animation);
+  transition: fill var(--animation);
+}
+
 .header {
   background-color: var(--main-bg);
   padding: 22px 0;
@@ -268,6 +295,49 @@ img {
   transition: color var(--animation), background-color var(--animation);
 }
 
+.barbers {
+  background-color: var(--secondary-bg);
+}
+.barbers__uppertitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.barbers__uppertitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background: var(--main-txt-cl);
+  display: block;
+}
+.barbers__title {
+  display: block;
+  margin-bottom: 44px;
+}
+.barbers__list {
+  --item: 2;
+}
+.barbers__name {
+  text-align: center;
+  margin-bottom: 3px;
+}
+.barbers__article {
+  font-size: 14px;
+  line-height: 1.3571428571;
+  text-align: center;
+  color: var(--orange-txt-cl);
+  margin-bottom: 30px;
+}
+
 .customers__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -339,6 +409,61 @@ img {
 }
 .customers__undertitle {
   margin: 0;
+}
+
+.gallery {
+  max-width: 1600px;
+}
+.gallery__uppertitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  text-transform: uppercase;
+  margin-bottom: 44px;
+  margin-left: 215px;
+}
+.gallery__uppertitle::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: currentColor;
+}
+.gallery__title {
+  display: none;
+}
+.gallery__list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--main-bg);
+}
+
+.booking {
+  width: 785px;
+}
+.booking__title {
+  font-family: "Raleway";
+  color: var(--secondary-txt-cl);
+}
+.booking__label {
+  display: block;
 }
 
 .price {

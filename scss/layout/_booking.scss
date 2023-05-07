@@ -1,0 +1,15 @@
+.contact-group {
+    display: flex;
+    background-color: var(--main-bg);
+}
+
+.booking {
+    width: 785px;
+    &__title {
+        font-family: "Raleway";
+        color: var(--secondary-txt-cl);
+    }
+    &__label {
+        display: block;
+    }
+}

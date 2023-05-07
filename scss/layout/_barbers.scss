@@ -1,0 +1,38 @@
+.barbers {
+    background-color: var(--secondary-bg);
+    &__uppertitle {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: calc(15 / 11);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    &__uppertitle::before {
+        content: "";
+        width: 60px;
+        height: 1px;
+        background: var(--main-txt-cl);
+        display: block;
+    }
+    &__title {
+        display: block;
+        margin-bottom: 44px;
+    }
+    &__list {
+        --item: 2;
+    }
+    &__name {
+        text-align: center;
+        margin-bottom: 3px;
+    }
+    &__article {
+        font-size: 14px;
+        line-height: calc(19 / 14);
+        text-align: center;
+        color: var(--orange-txt-cl);
+        margin-bottom: 30px;
+    }
+}
