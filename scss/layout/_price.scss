@@ -1,0 +1,56 @@
+.price {
+    max-width: 1600px;
+    background-image: url("/images/background/price-bg.png");
+    background-color: var(--main-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__uppertitle {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-family: "Open Sans";
+        font-weight: 600;
+        font-size: 11px;
+        line-height: calc(15 / 11);
+        text-transform: uppercase;
+        color: rgba(157, 164, 189, 0.6);
+        margin-bottom: 20px;
+    }
+    &__uppertitle::before {
+        display: block;
+        content: "";
+        width: 60px;
+        height: 1px;
+        background: rgba(157, 164, 189, 0.6);
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: calc(49 / 42);
+        letter-spacing: 0.05em;
+        color: var(--secondary-txt-cl);
+        margin-bottom: 44px;
+    }
+    &__list {
+        margin-bottom: 44px;
+    }
+    &__item {
+        width: 570px;
+        background-color: #303030;
+        color: #9da4bd;
+    }
+    &__list--service {
+        padding: 30px 20px;
+    }
+    &__item--service {
+        margin-bottom: 20px;
+    }
+    &__button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+}
