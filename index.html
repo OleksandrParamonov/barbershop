@@ -433,32 +433,36 @@
 
       <!--Section Booking-->
       <div class="contact-group">
-        <section class="booking section">
-          <h2 class="booking__title about__title">Online-booking</h2>
-          <form action="" class="booking__form">
-            <label for="" class="booking__label">
-              <input type="text" class="booking__input" name="user-name" placeholder="Name" />
-              <span class="booking__form--article">Name*</span>
-            </label>
-            <label for="" class="booking__label">
-              <input type="tel" class="booking__input" name="phone" placeholder="Phone" />
-              <span class="booking__form--article">Phone*</span>
-            </label>
+        <div class="booking__left--side"
+          ><section class="booking section">
+            <h2 class="booking__title about__title">Online-booking</h2>
+            <form action="" class="booking__form">
+              <div class="booking__label--align">
+                <label for="" class="booking__label">
+                  <input type="text" class="booking__input" name="user-name" placeholder="Name" />
+                  <span class="booking__form--article visually-hidden">Name*</span>
+                </label>
+                <label for="" class="booking__label">
+                  <input type="tel" class="booking__input" name="phone" placeholder="Phone" />
+                  <span class="booking__form--article visually-hidden">Phone*</span>
+                </label>
+              </div>
 
-            <label for="" class="booking__label">
-              <textarea
-                name="user-name"
-                id=""
-                cols="30"
-                rows="6"
-                class="booking__textarea"
-                placeholder="Message"
-              ></textarea>
-              <span class="booking__form--article">Message</span>
-            </label>
-          </form>
-          <button class="booking__button" type="submit"> SEND</button>
-        </section>
+              <label for="" class="booking__textarea--label">
+                <textarea
+                  name="user-name"
+                  id=""
+                  cols="30"
+                  rows="6"
+                  class="booking__textarea booking__input"
+                  placeholder="Message"
+                ></textarea>
+                <span class="booking__form--article visually-hidden">Message</span>
+              </label>
+            </form>
+            <button class="booking__button header__button" type="submit"> SEND</button>
+          </section>
+        </div>
 
         <!--Section Contacts-->
 
