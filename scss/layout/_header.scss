@@ -1,24 +1,27 @@
 .header {
-    background-color: var(--main-bg);
-    padding: 22px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    //background-color: var(--main-bg);
+
     &__container {
         display: flex;
-        justify-content: space-between;
         align-items: center;
     }
 
     &__button {
-        min-width: 120px;
-        min-height: 16px;
+        min-width: 160px;
+        min-height: 40px;
+        font-family: inherit;
         font-weight: 600;
         font-size: 12px;
         line-height: calc(16 / 12);
         letter-spacing: 0.09em;
-        text-decoration: none;
         text-transform: uppercase;
         color: var(--secondary-txt-cl);
-        background: rgba(25, 28, 38, 0.2);
-        padding: 12px 20px;
+        background: transparent;
+        padding: 11px 19px;
         border: 1px solid #ff6c00;
         border-radius: 25px;
         background-color: inherit;
@@ -28,5 +31,8 @@
     &__button:hover,
     &__button:focus {
         background-color: var(--orange-bg);
+    }
+    &__contact {
+        margin-left: auto;
     }
 }

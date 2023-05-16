@@ -81,12 +81,8 @@ img {
   list-style: none;
 }
 
-.logo {
-  display: block;
-  padding: 22px 24px;
-}
-
 .nav {
+  margin-left: 124px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -167,32 +163,31 @@ img {
 }
 
 .header {
-  background-color: var(--main-bg);
-  padding: 22px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 .header__button {
-  min-width: 120px;
-  min-height: 16px;
+  min-width: 160px;
+  min-height: 40px;
+  font-family: inherit;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.3333333333;
   letter-spacing: 0.09em;
-  text-decoration: none;
   text-transform: uppercase;
   color: var(--secondary-txt-cl);
-  background: rgba(25, 28, 38, 0.2);
-  padding: 12px 20px;
+  background: transparent;
+  padding: 11px 19px;
   border: 1px solid #ff6c00;
   border-radius: 25px;
   background-color: inherit;
@@ -203,6 +198,9 @@ img {
 .header__button:hover, .header__button:focus {
   background-color: var(--orange-bg);
 }
+.header__contact {
+  margin-left: auto;
+}
 
 .hero {
   background-image: linear-gradient(to right, #ffffff 155px, rgba(25, 28, 38, 0.2) 155px), url("/images/background/hero-bg.jpg");
@@ -211,9 +209,20 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border: 1px solid tomato;
   margin-left: auto;
   margin-right: auto;
+}
+.hero__left--side {
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.hero__right--side {
+  margin-left: 100px;
 }
 
 .about__container {
