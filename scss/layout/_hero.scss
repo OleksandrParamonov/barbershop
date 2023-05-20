@@ -8,12 +8,64 @@
     background-position: center;
     margin-left: auto;
     margin-right: auto;
+    &__container {
+        position: relative;
+        display: flex;
+    }
     &__left--side {
         width: 100px;
         display: flex;
         align-items: flex-end;
     }
+    &__social {
+        margin-bottom: 40px;
+        transform: rotate(-90deg) translateY(26px);
+    }
+    &__social-list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    &__social-list::before {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 1px;
+        background: var(--main-txt-cl);
+    }
     &__right--side {
-        margin-left: 100px;
+        margin-left: 159px;
+    }
+
+    &__uppertitle {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: calc(15 / 11);
+        text-transform: uppercase;
+        color: var(--hero-back-txt-cl);
+        margin-bottom: 20px;
+    }
+    &__title {
+        font-family: var(--secondary-font);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: calc(85 / 72);
+        letter-spacing: 0.05em;
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+    &__undertitle {
+        display: block;
+        color: var(--grey-txt-cl);
+        width: 360px;
+        height: 60px;
+    }
+    &__list {
+        position: absolute;
+        top: 50%;
+        right: 35px;
     }
 }
